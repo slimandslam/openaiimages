@@ -69,12 +69,12 @@ $ npm run tauri ios dev
 ```
 <br />
 ## Using The App
-Once you've added your OpenAI API key, simply type a prompt into the text box
-and click on the "Create Image" button.
-Once an image is loaded, which usually takes about 15 seconds, there are two other features for the desktop app (Windows/Linux/MacOS):
-- Rolling over the image will reveal a tooltip containing the "revised prompt" if OpenAI returned one.
-- Clicking on the image will bring up a "Save As" dialog.
-On iOS, you can click on the image to see the tooltip and save the image. 
+
+#### Once you've added your OpenAI API key, simply type a prompt into the text box and click on the "Create Image" button. When the image is loaded, which usually takes about 15 seconds, there are two other features for the desktop app (Windows/Linux/MacOS):
+#### - Rolling over the image will reveal a tooltip containing the "revised prompt" if OpenAI returned one.
+#### - Clicking on the image will bring up a "Save As" dialog.
+#### On iOS, you can click on the image to see the tooltip and save the image. 
+
 <br />
 <span>
 <figure>
