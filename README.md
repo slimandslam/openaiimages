@@ -4,7 +4,7 @@
 ### Author: Jason Levitt
 ### Initial Release Date: February 28th, 2024
 
-## openaiimages demonstrates [Tauri version 2's](https://beta.tauri.app) ability to take a [React](https://react.dev) frontend and use it to develop a desktop and mobile app for multiple platforms using only one code base. You can develop for MacOS, Windows, Linux, Android, and iOS.
+## openaiimages demonstrates [Tauri version 2's](https://beta.tauri.app) ability to take a [React](https://react.dev) frontend and use it to develop desktop and mobile apps for multiple platforms using only one code base. You can develop for MacOS, Windows, Linux, Android, and iOS.
 
 <figure>
     <img src="https://i.imgur.com/FFWxw8W.png" alt="MacOS" width="800"/>
