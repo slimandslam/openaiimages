@@ -24,7 +24,7 @@
     "@popperjs/core": "^2.11.8",
     "react-bootstrap": "^2.10.2",
     "react-bootstrap-icons": "^1.11.4",
-    "sweetalert2": "^11.10.8"
+    "sweetalert2": "^11.11.0"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^2.0.0-beta.17",
