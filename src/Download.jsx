@@ -19,16 +19,6 @@ async function Download(showSpinner) {
 
     if (filePath === null) return;
 
-     const params =  {
-           model: "dall-e-3",
-           prompt: prompt,
-           n: 1,
-           size: "1024x1024",
-           quality: "standard",
-           style: "vivid",
-           response_format: "url"
-     };
-
     document.getElementById('theimg').style.display = 'none';
     showSpinner(true);
 

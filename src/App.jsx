@@ -110,7 +110,7 @@ function App() {
      if (isIOS()  || isAndroid()) {
            setContent(<Image title={rvprompt} id="theimg" 
                 className="centerfit" src={url}/>);
-     } else {
+     } else { 
            setContent(<Image title={rvprompt} id="theimg" 
                 onClick={() => Download(showSpinner)}
                 className="centerfit" src={url}/>);
