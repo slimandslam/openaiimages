@@ -61,11 +61,17 @@ function App() {
      }
 
      ClearEntry();
-     showSpinner(true);
 
      const store = new Store(".settings.json");
      const apikey = await store.get("openai");
      const url = "https://api.openai.com/v1/images/generations";
+
+     if (apikey === null) {
+        statusCheck(401, "");
+        return;
+     }
+
+     showSpinner(true);
 
      const params =  {
            model: "dall-e-3",
