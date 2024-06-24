@@ -1,9 +1,6 @@
-import { useState } from "react";
-import { writeFile, BaseDirectory } from '@tauri-apps/plugin-fs';
+import { writeFile } from '@tauri-apps/plugin-fs';
 import { fetch } from '@tauri-apps/plugin-http';
 import { save } from '@tauri-apps/plugin-dialog';
-import { Store } from "@tauri-apps/plugin-store";
-import { isWindows, isLinux, isIOS, isAndroid } from "./Oscheck";
 import Swal from 'sweetalert2';
 
 async function Download(showSpinner) {
