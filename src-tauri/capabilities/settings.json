@@ -1,9 +1,10 @@
 {
-  "$schema": "./schemas/desktop-schema.json",
-  "identifier": "main-capability",
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
   "description": "Capability for the main window",
   "windows": ["main"],
   "permissions": [
+    "core:default",
     "core:path:default",
     "core:event:default",
     "core:window:default",
