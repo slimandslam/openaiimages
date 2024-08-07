@@ -12,7 +12,7 @@ export default function Settings(props) {
      async function setvals() {
        const store = new Store(".settings.json");
        let js1 = null;
-       try { js1 = await store.get("openai"); } catch(e) {}
+       try { js1 = await store.get("openai"); } catch(e) { console.log("ERROR: ", e); }
        if (js1 !== null) Setopenaival(js1.val);
      }
      setvals();
