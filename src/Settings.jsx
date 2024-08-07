@@ -1,12 +1,18 @@
 import { useState } from "react";
 import { useEffect } from 'react';
 import { Store } from "@tauri-apps/plugin-store";
+import PropTypes from 'prop-types';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
   
 export default function Settings(props) {
   const [openaival, Setopenaival] = useState("");
+
+Settings.propTypes = {
+  hideit: PropTypes.func.isRequired,
+  showit: PropTypes.bool.isRequired,
+};
 
    useEffect(() => {
      async function setvals() {
