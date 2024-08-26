@@ -2,7 +2,9 @@
   "$schema": "../gen/schemas/desktop-schema.json",
   "identifier": "default",
   "description": "Capability for the main window",
-  "windows": ["main"],
+  "windows": [
+    "main"
+  ],
   "permissions": [
     "core:default",
     "core:path:default",
@@ -14,12 +16,19 @@
     "core:menu:default",
     "core:tray:default",
     "core:window:allow-set-title",
+    "os:allow-platform",
     "http:allow-fetch-send",
     "http:allow-fetch-read-body",
     {
       "identifier": "http:allow-fetch",
-      "allow": [{ "url": "https://api.openai.com/*" },
-                { "url": "https://*.blob.core.windows.net/*" }]
+      "allow": [
+        {
+          "url": "https://api.openai.com/*"
+        },
+        {
+          "url": "https://*.blob.core.windows.net/*"
+        }
+      ]
     },
     "store:allow-delete",
     "store:allow-get",
@@ -37,10 +46,30 @@
     "dialog:allow-save",
     {
       "identifier": "fs:allow-write-file",
-      "allow": [{ "path": "$APPDATA/*" }, { "path": "$HOME/*" }, 
-      { "path": "$APPCONFIG/*" }, { "path": "$PUBLIC/*" }, { "path": "$DOCUMENT/*" },
-      { "path": "$DESKTOP/*" }, { "path": "$DOWNLOAD/*" }]
-    }
+      "allow": [
+        {
+          "path": "$APPDATA/*"
+        },
+        {
+          "path": "$HOME/*"
+        },
+        {
+          "path": "$APPCONFIG/*"
+        },
+        {
+          "path": "$PUBLIC/*"
+        },
+        {
+          "path": "$DOCUMENT/*"
+        },
+        {
+          "path": "$DESKTOP/*"
+        },
+        {
+          "path": "$DOWNLOAD/*"
+        }
+      ]
+    },
+    "os:default"
   ]
 }
-

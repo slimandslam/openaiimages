@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { platform } from '@tauri-apps/plugin-os';
 import Spinner from 'react-bootstrap/Spinner';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -14,8 +15,6 @@ import { Store } from "@tauri-apps/plugin-store";
 import Settings from "./Settings";
 import { Download } from "./Download";
 import "./App.css";
-import { isIOS } from "./Oscheck";
-import { isAndroid } from "./Oscheck";
 
 function App() {
   const [prompt, setPrompt] = useState("");
@@ -109,9 +108,10 @@ function App() {
    }
   }
 
-  function ShowImg(url, rvprompt) {
+  async function ShowImg(url, rvprompt) {
+     const os = await platform();
      if (rvprompt === null) rvprompt = "There is no revised prompt"; 
-     if (isIOS()  || isAndroid()) {
+     if (os === "ios"  || os === "android") {
            setContent(<Image title={rvprompt} id="theimg" 
                 className="centerfit" src={url}/>);
      } else { 
