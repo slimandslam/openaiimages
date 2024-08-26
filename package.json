@@ -27,7 +27,7 @@
     "react-bootstrap": "^2.10.4",
     "react-bootstrap-icons": "^1.11.4",
     "react-dom": "^18.3.1",
-    "sweetalert2": "^11.12.3"
+    "sweetalert2": "^11.12.4"
   },
   "devDependencies": {
     "@tauri-apps/cli": ">=2.0.0-rc.0",
@@ -35,6 +35,6 @@
     "eslint": "8.57.0",
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.2",
-    "vite": "^5.3.5"
+    "vite": "^5.4.2"
   }
 }
