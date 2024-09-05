@@ -4,6 +4,12 @@
     height: 540px;
 }
 
+.centerfitmobile {
+    object-fit: contain;
+    width: auto;
+    height: 540px;
+}
+
 .txtcenter {
   text-align: center;
 }
@@ -25,6 +31,7 @@
 }
 
 .ballsize {
+    margin: auto;
     width: 6rem; 
     height: 6rem; 
 }

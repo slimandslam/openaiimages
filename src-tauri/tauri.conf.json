@@ -10,9 +10,9 @@
   },
   "app": {"windows": [
       {
-        "title": "openaiimages",
-        "width": 800,
-        "height": 600
+     "title": "openaiimages",
+     "width": 800,
+     "height": 600
       }
     ],
     "security": {

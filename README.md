@@ -24,18 +24,10 @@ $ cd openaiimages
  ```sh  
 $ yarn
 ```
-#### or
- ```sh  
-$ npm install
-```
 
 ### Then, to build and launch the desktop version (tested on MacOS and Windows):
  ```sh 
  $ yarn tauri dev
- ``` 
-#### or
- ```sh 
- $ npm run tauri dev
  ``` 
 
 ### To build and launch the Android version:
@@ -43,21 +35,11 @@ $ npm install
 $ yarn tauri android init
 $ yarn tauri android dev
 ```
-#### or
- ```sh
-$ npm run tauri android init
-$ npm run tauri android dev
-```
 
 ### To build and launch the iOS version:
  ```sh
 $ yarn tauri ios init
 $ yarn tauri ios dev
-```
-#### or
- ```sh
-$ npm run tauri ios init
-$ npm run tauri ios dev
 ```
 <br />
 
@@ -74,7 +56,7 @@ $ npm run tauri ios dev
 #### In the app, click on the gear in the lower left-hand corner to add your API key. Once you've added your OpenAI API key, simply type a prompt into the text box and click on the "Create Image" button. When the image is loaded, which usually takes about 15 seconds, there are two other features for the desktop app (Windows/Linux/MacOS):
 #### - Rolling over the image will reveal a tooltip containing the "revised prompt" if OpenAI returned one.
 #### - Clicking on the image will bring up a "Save As" dialog.
-#### On iOS, you can right-click on the image to see the tooltip and save the image. 
+#### On iOS, you can right-click on the image to see the tooltip. 
 
 <br />
 <span>

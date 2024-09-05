@@ -26,7 +26,7 @@ async function Download(showSpinner) {
       showSpinner(false);
       document.getElementById('theimg').style.display = '';
         Swal.fire({
-         text: 'Image downloaded successfully',
+         text: 'Image is saved to your device',
         confirmButtonText: 'Ok'
        });
       } catch (error) {

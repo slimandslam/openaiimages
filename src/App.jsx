@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { platform } from '@tauri-apps/plugin-os';
 import Spinner from 'react-bootstrap/Spinner';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -109,20 +108,13 @@ function App() {
   }
 
   async function ShowImg(url, rvprompt) {
-     const os = await platform();
      if (rvprompt === null) rvprompt = "There is no revised prompt"; 
-     if (os === "ios"  || os === "android") {
-           setContent(<Image title={rvprompt} id="theimg" 
-                className="centerfit" src={url}/>);
-     } else { 
-           setContent(<Image title={rvprompt} id="theimg" 
-                onClick={() => Download(showSpinner)}
-                className="centerfit" src={url}/>);
-     }
-   }
+     setContent(<Image title={rvprompt} className="centerfit" id="theimg" 
+                onClick={() => Download(showSpinner)} src={url}/>);
+  }
 
   function ShowMsg(content) {
-         setContent(<p className="txtcenter"><strong>{content}</strong></p>);
+         setContent(<p className="d-flex justify-content-center align-items-center vh-100"><strong>{content}</strong></p>);
   }
 
   function ClearEntry() {
@@ -149,9 +141,9 @@ function App() {
      {(settings) ? <Settings showit={settings} hideit={hideSettings} /> : null }
 
      <Row className="imght d-flex justify-content-center align-items-center">
-     <div id="thepic" className="d-flex justify-content-center align-items-center" >
+     <div id="thepic" className="d-flex justify-content-center align-items-center w-100 h-100">
       {content}
-      {spin && <Spinner className="ballsize d-flex justify-content-center align-items-center" animation="grow" variant="primary" />}
+      {spin && <Spinner style={{ display: 'block', margin: '0 auto' }} className="ballsize" animation="grow" variant="primary" />}
       </div>
 
      </Row>
