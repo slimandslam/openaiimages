@@ -4,10 +4,15 @@
     height: 540px;
 }
 
-.centerfitmobile {
-    object-fit: contain;
-    width: auto;
-    height: 540px;
+/* Mobile phone-specific .centerfit styles */
+@media (max-width: 600px) { /* Target screens 600px or smaller, typical of phones */
+  .centerfit {
+    width: 100%; /* Full width for mobile */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 100%; /* Ensure it fits within the container height */
+    display: block; /* Ensures it behaves as a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+  }
 }
 
 .txtcenter {
