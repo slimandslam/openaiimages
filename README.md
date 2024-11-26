@@ -1,6 +1,8 @@
 # openaiimages 
 # A sample React app for Tauri version 2
 
+[![Donate Paypal](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://paypal.me/jlevittpay?country.x=US&locale.x=en_US) [![Donate Venmo](https://img.shields.io/badge/Donate%20via-Venmo-blue)](https://venmo.com/JasonLevitt) ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/slimandslam/openaiimages/total)
+
 ### Author: Jason Levitt
 ### Initial Release Date: February 28th, 2024
 
