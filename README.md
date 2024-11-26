@@ -1,9 +1,11 @@
-# openaiimages 
+# openaiimages
+
 # A sample React app for Tauri version 2
 
 [![Donate Paypal](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://paypal.me/jlevittpay?country.x=US&locale.x=en_US) [![Donate Venmo](https://img.shields.io/badge/Donate%20via-Venmo-blue)](https://venmo.com/JasonLevitt) ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/slimandslam/openaiimages/total)
 
 ### Author: Jason Levitt
+
 ### Initial Release Date: February 28th, 2024
 
 ## openaiimages demonstrates [Tauri version 2's](https://beta.tauri.app) ability to take a [React](https://react.dev) frontend and use it to develop desktop and mobile apps for multiple platforms using only one code base. You can develop for MacOS, Windows, Linux, Android, and iOS.
@@ -16,38 +18,47 @@
 ## Building The App
 
 ### For prerequisites, see this page: <a href="https://beta.tauri.app/guides/prerequisites" target="_blank">Tauri prerequisites</a>
-#### Note that iOS development requires a Mac (sorry). 
+
+#### Note that iOS development requires a Mac (sorry).
 
 ### After you clone this repo:
- ```sh 
+
+```sh
 $ cd openaiimages
 ```
+
 ### Install the Javascript packages (this is a typical React step)
- ```sh  
+
+```sh
 $ yarn
 ```
 
 ### Then, to build and launch the desktop version (tested on MacOS and Windows):
- ```sh 
- $ yarn tauri dev
- ``` 
+
+```sh
+$ yarn tauri dev
+```
 
 ### To build and launch the Android version:
- ```sh
+
+```sh
 $ yarn tauri android init
 $ yarn tauri android dev
 ```
 
 ### To build and launch the iOS version:
- ```sh
+
+```sh
 $ yarn tauri ios init
 $ yarn tauri ios dev
 ```
+
 <br />
 
 ## Using The App
 
-### This sample app requires an OpenAI API key in order to do anything interesting. You can get a free key, with $5 USD of free usage which is enough to generate over 100 images, by signing up here [no credit card required]: 
+### This sample app requires an OpenAI API key in order to do anything interesting. You can get a free key, with $5 USD of free usage which is enough to generate over 100 images, by signing up here [no credit card required]:
+
 - OpenAI signup
   <a href="https://platform.openai.com/signup" target="_blank">OpenAI signup</a>
 - Once you login, you can check that you have $5 of free credit
@@ -56,9 +67,12 @@ $ yarn tauri ios dev
   <a href="https://platform.openai.com/api-keys" target="_blank">Create an API key</a>
 
 #### In the app, click on the gear in the lower left-hand corner to add your API key. Once you've added your OpenAI API key, simply type a prompt into the text box and click on the "Create Image" button. When the image is loaded, which usually takes about 15 seconds, there are two other features for the desktop app (Windows/Linux/MacOS):
+
 #### - Rolling over the image will reveal a tooltip containing the "revised prompt" if OpenAI returned one.
+
 #### - Clicking on the image will bring up a "Save As" dialog.
-#### On iOS, you can right-click on the image to see the tooltip. 
+
+#### On iOS, you can right-click on the image to see the tooltip.
 
 <br />
 <span>

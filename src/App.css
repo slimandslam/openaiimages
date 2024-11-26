@@ -1,11 +1,12 @@
 .centerfit {
-    object-fit: contain;
-    width: auto;
-    height: 540px;
+  object-fit: contain;
+  width: auto;
+  height: 540px;
 }
 
 /* Mobile phone-specific .centerfit styles */
-@media (max-width: 600px) { /* Target screens 600px or smaller, typical of phones */
+@media (max-width: 600px) {
+  /* Target screens 600px or smaller, typical of phones */
   .centerfit {
     width: 100%; /* Full width for mobile */
     height: auto; /* Maintain aspect ratio */
@@ -36,7 +37,7 @@
 }
 
 .ballsize {
-    margin: auto;
-    width: 6rem; 
-    height: 6rem; 
+  margin: auto;
+  width: 6rem;
+  height: 6rem;
 }

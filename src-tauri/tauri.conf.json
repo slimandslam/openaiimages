@@ -1,6 +1,6 @@
 {
   "productName": "openaiimages",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "identifier": "com.openaiimages.dev",
   "build": {
     "beforeDevCommand": "yarn dev",
@@ -8,11 +8,12 @@
     "beforeBuildCommand": "yarn build",
     "frontendDist": "../dist"
   },
-  "app": {"windows": [
+  "app": {
+    "windows": [
       {
-     "title": "openaiimages",
-     "width": 800,
-     "height": 600
+        "title": "openaiimages",
+        "width": 800,
+        "height": 600
       }
     ],
     "security": {
@@ -29,6 +30,6 @@
       "icons/icon.icns",
       "icons/icon.ico"
     ],
-    "iOS": { "developmentTeam": "sxkdjj33"}
+    "iOS": { "developmentTeam": "sxkdjj33" }
   }
 }
